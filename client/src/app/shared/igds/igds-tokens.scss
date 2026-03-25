@@ -1,0 +1,160 @@
+// IGDS Design Tokens - Israeli Government Design System
+// Based on https://igds.gov.il/4988d5140/p/468ada-design-tokens
+
+// ============================================
+// Primitive Color Tokens
+// ============================================
+
+// Israel Blue
+$israel-blue-50: #E8EEF7;
+$israel-blue-100: #C5D4EC;
+$israel-blue-200: #9FB7DF;
+$israel-blue-300: #7999D2;
+$israel-blue-400: #5C82C8;
+$israel-blue-500: #3F6BBE; // Primary brand color
+$israel-blue-600: #3963B8;
+$israel-blue-700: #3158AF;
+$israel-blue-800: #294EA7;
+$israel-blue-900: #1B3C99;
+
+// Dawn Blue
+$dawn-blue-900: #0D1B3E;
+
+// Mist Blue
+$mist-blue-600: #5A6B82;
+
+// Dim Grey
+$dim-grey-50: #F5F6F7;
+
+// Steel Grey
+$steel-grey-100: #E8EAED;
+$steel-grey-400: #B0B5BD;
+$steel-grey-600: #8A919C;
+
+// Bright Grey
+$bright-grey-50: rgba(255, 255, 255, 0.2);
+$bright-grey-300: #D1D5DB;
+$bright-grey-500: #9CA3AF;
+$bright-grey-800: #4B5563;
+
+// Galil Green (Success)
+$galil-green-50: #E8F5E9;
+$galil-green-100: #C8E6C9;
+$galil-green-500: #4CAF50;
+$galil-green-700: #388E3C;
+
+// Negev Yellow (Warning)
+$negev-yellow-50: #FFF8E1;
+$negev-yellow-100: #FFECB3;
+$negev-yellow-500: #FFC107;
+$negev-yellow-700: #FFA000;
+
+// Coral Red (Failure/Error)
+$coral-red-50: #FFEBEE;
+$coral-red-100: #FFCDD2;
+$coral-red-500: #F44336;
+$coral-red-600: #E53935;
+$coral-red-700: #D32F2F;
+
+$white: #FFFFFF;
+$black: #000000;
+
+
+// ============================================
+// Semantic Tokens (CSS Custom Properties)
+// ============================================
+
+:root {
+  // Background
+  --igds-bg-full-screen: #{$israel-blue-50};
+  --igds-bg-neutral: #{$white};
+  --igds-bg-neutral-hover: #{$dim-grey-50};
+  --igds-bg-neutral-secondlevel: #{$dim-grey-50};
+  --igds-bg-disabled-with-border: #{$steel-grey-100};
+  --igds-bg-disabled-without-border: #{$steel-grey-400};
+  --igds-bg-brand-default: #{$israel-blue-500};
+  --igds-bg-brand-hover: #{$israel-blue-600};
+  --igds-bg-brand-pressed: #{$israel-blue-700};
+  --igds-bg-inverted: #{$dawn-blue-900};
+  --igds-bg-success-with-border: #{$galil-green-50};
+  --igds-bg-success-without-border: #{$galil-green-100};
+  --igds-bg-success-without-text: #{$galil-green-500};
+  --igds-bg-warning-with-border: #{$negev-yellow-50};
+  --igds-bg-warning-without-border: #{$negev-yellow-100};
+  --igds-bg-warning-without-text: #{$negev-yellow-500};
+  --igds-bg-failure-with-border: #{$coral-red-50};
+  --igds-bg-failure-without-border: #{$coral-red-100};
+  --igds-bg-failure-without-text: #{$coral-red-500};
+  --igds-bg-secondary-pressed: #{$israel-blue-50};
+  --igds-bg-numeric-badge: #{$coral-red-600};
+  --igds-bg-scroller: #{$bright-grey-500};
+
+  // Text & Icon
+  --igds-text-primary: #{$dawn-blue-900};
+  --igds-text-secondary: #{$mist-blue-600};
+  --igds-text-inverted: #{$white};
+  --igds-text-link-default: #{$israel-blue-500};
+  --igds-text-link-hover: #{$israel-blue-600};
+  --igds-text-link-secondary: #{$dawn-blue-900};
+  --igds-text-link-secondary-hover: #{$israel-blue-500};
+  --igds-text-disabled: #{$steel-grey-600};
+  --igds-text-success: #{$galil-green-700};
+  --igds-text-warning: #{$negev-yellow-700};
+  --igds-text-failure: #{$coral-red-700};
+
+  // Border
+  --igds-border-subtle-default: #{$bright-grey-500};
+  --igds-border-subtle-hover: #{$bright-grey-800};
+  --igds-border-brand-default: #{$israel-blue-500};
+  --igds-border-brand-hover: #{$israel-blue-700};
+  --igds-border-disabled: #{$steel-grey-600};
+  --igds-border-success: #{$galil-green-700};
+  --igds-border-warning: #{$negev-yellow-700};
+  --igds-border-failure: #{$coral-red-700};
+  --igds-border-active: #{$israel-blue-500};
+  --igds-border-focused: #{$israel-blue-500};
+  --igds-border-divider: #{$bright-grey-300};
+
+  // Typography
+  --igds-font-family: 'Heebo', 'Assistant', Arial, sans-serif;
+  --igds-font-size-xs: 12px;
+  --igds-font-size-sm: 14px;
+  --igds-font-size-md: 16px;
+  --igds-font-size-lg: 18px;
+  --igds-font-size-xl: 20px;
+  --igds-font-size-2xl: 24px;
+  --igds-font-size-3xl: 32px;
+  --igds-font-weight-regular: 400;
+  --igds-font-weight-medium: 500;
+  --igds-font-weight-bold: 700;
+
+  // Spacing
+  --igds-space-2: 2px;
+  --igds-space-4: 4px;
+  --igds-space-8: 8px;
+  --igds-space-12: 12px;
+  --igds-space-16: 16px;
+  --igds-space-20: 20px;
+  --igds-space-24: 24px;
+  --igds-space-32: 32px;
+  --igds-space-40: 40px;
+  --igds-space-48: 48px;
+
+  // Border Radius
+  --igds-radius-sm: 4px;
+  --igds-radius-md: 8px;
+  --igds-radius-lg: 12px;
+  --igds-radius-xl: 16px;
+  --igds-radius-full: 9999px;
+
+  // Shadow & Elevation
+  --igds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --igds-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --igds-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --igds-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+  // Transitions
+  --igds-transition-fast: 150ms ease;
+  --igds-transition-normal: 250ms ease;
+  --igds-transition-slow: 350ms ease;
+}

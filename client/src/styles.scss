@@ -1,0 +1,18 @@
+@import '@igds/tokens';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--igds-font-family), Roboto, "Helvetica Neue", sans-serif;
+  direction: rtl;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
