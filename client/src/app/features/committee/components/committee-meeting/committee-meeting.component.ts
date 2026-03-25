@@ -49,7 +49,7 @@ import { IgdsDropdownOption } from '@igds/angular';
           </div>
           <div class="info-item">
             <span class="label">מועמדויות לדיון:</span>
-            <span>{{ meeting.candidacyIds?.length || 0 }}</span>
+            <span>{{ meeting.candidacyIds.length || 0 }}</span>
           </div>
         </div>
       </igds-card>

@@ -8,9 +8,7 @@ export class AuthGuard implements CanActivate {
   constructor(private authService: AuthService, private router: Router) {}
 
   canActivate(): boolean | UrlTree | Observable<boolean | UrlTree> {
-    if (this.authService.isAuthenticated()) {
-      return true;
-    }
-    return this.router.createUrlTree(['/login']);
+    // TODO: restore auth check when backend login is implemented
+    return true;
   }
 }

@@ -1,4 +1,7 @@
-@import '@igds/tokens';
+// @igds/tokens not available - using fallback
+:root {
+  --igds-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 html, body {
   height: 100%;

@@ -180,7 +180,7 @@ export class ContactFormComponent implements OnInit {
       .pipe(
         debounceTime(500),
         distinctUntilChanged(),
-        filter((val: string) => val && val.length >= 5),
+        filter((val): val is string => !!val && val.length >= 5),
         switchMap((idNumber: string) => this.contactService.getByIdNumber(idNumber))
       )
       .subscribe({

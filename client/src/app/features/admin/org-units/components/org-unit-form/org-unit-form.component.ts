@@ -32,7 +32,7 @@ import { NotificationService } from '@core/services/notification.service';
             label='דוא"ל'
             type="email"
             formControlName="contactEmail"
-            [error]="form.get('contactEmail')?.hasError('email') ? 'כתובת דוא\"ל לא תקינה' : ''">
+            [error]="form.get('contactEmail')?.hasError('email') ? 'כתובת לא תקינה' : ''">
           </igds-input-field>
 
           <igds-input-field

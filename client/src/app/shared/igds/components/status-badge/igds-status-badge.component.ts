@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   template: `
     <span class="igds-badge" [ngClass]="'igds-badge--' + variant" role="status">
       <span class="igds-badge__dot"></span>
-      {{text}}
+      {{text || label}}
     </span>
   `,
   styles: [`
@@ -31,6 +31,7 @@ import { Component, Input } from '@angular/core';
   `]
 })
 export class IgdsStatusBadgeComponent {
-  @Input() variant: 'success' | 'warning' | 'failure' | 'info' | 'neutral' = 'neutral';
+  @Input() variant: string = 'neutral';
   @Input() text = '';
+  @Input() label = '';
 }

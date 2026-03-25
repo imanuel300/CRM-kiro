@@ -33,7 +33,8 @@ import { Component, Input } from '@angular/core';
 })
 export class IgdsProgressBarComponent {
   @Input() value = 0;
+  @Input() max = 100;
   @Input() variant: 'default' | 'success' | 'warning' | 'failure' = 'default';
 
-  get clampedValue(): number { return Math.max(0, Math.min(100, this.value)); }
+  get clampedValue(): number { return Math.max(0, Math.min(100, this.max > 0 ? (this.value / this.max) * 100 : 0)); }
 }

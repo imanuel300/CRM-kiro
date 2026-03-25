@@ -21,7 +21,7 @@ import { AppState } from './core/store/app.state';
   `,
 })
 export class AppComponent implements OnInit, OnDestroy {
-  isAuthenticated = false;
+  isAuthenticated = true;
   private destroy$ = new Subject<void>();
 
   constructor(

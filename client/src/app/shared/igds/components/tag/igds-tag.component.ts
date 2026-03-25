@@ -37,6 +37,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class IgdsTagComponent {
   @Input() label = '';
   @Input() removable = false;
-  @Input() variant: 'default' | 'success' | 'warning' | 'failure' = 'default';
+  @Input() variant: string = 'default';
   @Output() remove = new EventEmitter<void>();
 }

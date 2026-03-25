@@ -1,6 +1,11 @@
 import { Component, Input, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
+export interface IgdsRadioOption {
+  value: any;
+  label: string;
+}
+
 @Component({
   selector: 'igds-radio-button',
   template: `
@@ -46,6 +51,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => IgdsRadioButtonComponent), multi: true }]
 })
 export class IgdsRadioButtonComponent implements ControlValueAccessor {
+  @Input() options: IgdsRadioOption[] = [];
   @Input() label = '';
   @Input() name = '';
   @Input() value: any = '';

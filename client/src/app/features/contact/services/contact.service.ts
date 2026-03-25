@@ -17,7 +17,7 @@ export class ContactService {
   constructor(private api: ApiService) {}
 
   search(term?: string): Observable<Contact[]> {
-    const params = term ? { searchTerm: term } : {};
+    const params: Record<string, string> = term ? { searchTerm: term } : {};
     return this.api.get<Contact[]>(this.basePath, params);
   }
 

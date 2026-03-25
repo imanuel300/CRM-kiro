@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://localhost:7001/api',
+  apiBaseUrl: 'http://localhost:5000/api',
   authConfig: {
     authority: 'https://login.microsoftonline.com/{tenant-id}',
     clientId: '{client-id}',
