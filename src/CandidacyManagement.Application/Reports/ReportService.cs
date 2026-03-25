@@ -301,7 +301,7 @@ public class ReportService : IReportService
         if (string.IsNullOrWhiteSpace(command.Name))
             throw new ValidationException("Name", "Report definition name is required.");
 
-        await _orgUnitRepo.GetByIdAsync(command.OrgUnitId, cancellationToken)
+        _ = await _orgUnitRepo.GetByIdAsync(command.OrgUnitId, cancellationToken)
             ?? throw new NotFoundException("OrganizationalUnit", command.OrgUnitId);
 
         var entity = new CustomReportDefinition

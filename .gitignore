@@ -1,0 +1,46 @@
+# ===== .NET =====
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.db
+*.db-shm
+*.db-wal
+
+# NuGet
+*.nupkg
+**/packages/
+
+# Logs
+logs/
+*.log
+
+# VS
+.vs/
+*.rsuser
+
+# Rider
+.idea/
+
+# ===== Angular =====
+client/node_modules/
+client/dist/
+client/.angular/
+client/.sass-cache/
+client/coverage/
+
+# ===== OS =====
+Thumbs.db
+.DS_Store
+
+# ===== IDE =====
+*.swp
+*.swo
+*~
+
+# ===== Environment =====
+.env
+.env.*
+appsettings.*.local.json
